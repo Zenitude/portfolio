@@ -1,0 +1,210 @@
+/* Contact */
+
+/* Global */
+    .sectionContact
+    {
+        width: 100%;
+        height: auto;
+        border-top: 1px solid #000;
+    }
+
+/* Titre */
+
+    .titreContact
+    {
+        width: 100%;
+        height: 70px;
+        color: #fff;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Contenu */
+
+    .contenuContact
+    {
+        display: flex;
+        padding: 20px;
+    }
+
+/* Formulaire */
+
+    .formContact
+    {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formContact label, input, button
+    {
+        width: 80%;
+        min-width: 280px;
+        height: 50px;
+        outline: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    .formContact label
+    {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    .formContact input
+    {
+        border: 1px solid gray;
+        box-shadow: 2px 2px 10px white;
+        padding-left: 15px;
+    }
+
+    .formContact textarea
+    {
+        width: 80%;
+        min-width: 280px;
+        height: 200px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        box-shadow: 2px 2px 10px white;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .formContact button
+    {
+        height: 80px;
+        font-size: 2rem;
+        border-radius: 50px;
+        border: 1px solid gray;
+        box-shadow: 2px 2px 10px white;
+        position: relative;
+    }
+
+    .formContact button:active
+    {
+        box-shadow: none;
+        top: 5px;
+        left: 5px;
+    }
+
+/* Séparation */
+
+    .contenuContact hr
+    {
+        width: 5px;
+        height: 80vh;
+    }
+
+/* Informations */
+
+    .informations
+    {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    /* Titres */
+
+    .informations h3
+    {
+        font-size: 2rem;
+        margin: 50px 0;
+        color: #fff;
+    }
+
+    /* E-mail et Téléphone */
+
+    .informations span
+    {
+        font-size: 1.5rem;
+        margin: 0 20px;
+        color: rgba(255,255,255,0.7);
+    }
+
+    /* Réseaux sociaux*/
+
+    .informations img
+    {
+        width: 75px;
+        height: 75px;
+        margin: 0 20px;
+        filter: drop-shadow(2px 2px 5px rgba(255,255,255,0.5));
+        -webkit-filter: drop-shadow(2px 2px 5px rgba(255,255,255,0.5));
+        position: relative;
+    }
+
+    .informations a:active img
+    {
+        top: 5px;
+        left: 5px;
+        filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));
+        -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5));
+    }
+
+/* Changement de résolution */
+
+@media screen and (max-width:1040px)
+{
+    .formContact
+    {
+        width: 100%;
+    }
+
+    .contenuContact
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenuContact hr
+    {
+        width: 80vw;
+        height: 5px;
+        margin-top: 50px;
+    }
+
+    .informations
+    {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .informations span
+    {
+        margin: 0px 0px;
+    }
+
+    .informations div 
+    {
+        text-align: center;
+        margin: 0 20px
+    }
+
+    .informations img 
+    {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .sectionContact h2
+    {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,135 @@
+/* Accueil */
+
+/* Global */
+
+.sectionAccueil
+{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+/* Météo */
+
+.meteo
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    filter: drop-shadow(0 0 1px #000);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.temperature
+{
+    font-size: 1.5rem;
+}
+
+/* Message d'accueil */
+
+.msgAccueil
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.msgAccueil span
+{
+    height: 50px;
+    filter: drop-shadow(0px 0px 1px #000) drop-shadow(0px 0px 1px #000);
+    -webkit-filter: drop-shadow(0px 0px 1px #000) drop-shadow(0px 0px 1px #000);
+}
+
+.greta
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greta img
+{
+    width: 300px;
+}
+
+.openclassroom
+{
+    color: rgb(116,81,235);
+}
+
+.openclassroom img
+{
+    width:50px;
+    height:50px;
+    display:inline;
+}
+
+.ecoleDuWeb
+{
+    color:rgb(9, 165, 154);
+}
+
+.msgAccueil video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Changement de résolution */
+
+@media screen and (max-width:700px)
+{
+    .sectionAccueil
+    {
+        width: 100%;
+        height: 80vh;
+        color: #fff;
+        position: relative;
+    }
+
+    .ecoleDuWeb img
+    {
+        width: 25px;    
+    }
+
+    .openclassroom img
+    {
+        width:25px;
+        height:25px;
+    }
+
+    .greta
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .greta img
+    {
+        width: 150px;
+    }
+
+}

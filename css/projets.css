@@ -1,0 +1,253 @@
+/* Projets */
+
+.sectionProjets 
+{
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #000;
+}
+
+.titreProjets
+{
+    margin-top: 70px;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrapheProjets
+{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5vmax;
+    filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
+    text-shadow: 0px 0px 20px red, 0px 0px 10px red;
+    font-family: 'Comforter', cursive;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1.8s 0.2s ease-out, transform 1.8s 0.2s ease-out;
+}
+  
+.contenuProjets 
+{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('../ressources/apropos/reseau-internet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@keyframes apparition
+{
+  100%
+  {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+}
+
+
+.contenuProjets a 
+{
+    text-decoration: none;
+}
+  
+.projets 
+{
+    width: 325px;
+    height: 325px;
+    display: flex;
+    margin: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+}
+ 
+.imgProjet 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px #000;
+}
+  
+.nomProjet 
+{
+    width: 100%;
+    height: 0%;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 2px black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    transition: height 1s 1s ease-in-out, opacity 1s ease-in-out;
+    -webkit-transition: height 1s 1s ease-in-out, opacity 1s ease-in-out;
+    -moz-transition: height 1s 1s ease-in-out, opacity 1s ease-in-out;
+    -ms-transition: height 1s 1s ease-in-out, opacity 1s ease-in-out;
+    -o-transition: height 1s 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.nomProjet h3
+{
+    font-size: 1.8rem;
+}
+
+.languages
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.languages span
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    color: #fff;
+}
+  
+.contenuProjets a:hover .nomProjet, .contenuProjets a:focus .nomProjet 
+{
+    height: 0%;
+    opacity: 0;
+}
+
+/* Apparitions */
+.projet1
+{
+    transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
+    -webkit-transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
+    -moz-transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
+    -ms-transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
+    -o-transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
+}
+
+.projet2
+{
+    transition: opacity 1.8s 0.6s ease-out, transform 1.8s 0.6s ease-out;
+    -webkit-transition: opacity 1.8s 0.6s ease-out, transform 1.8s 0.6s ease-out;
+    -moz-transition: opacity 1.8s 0.6s ease-out, transform 1.8s 0.6s ease-out;
+    -ms-transition: opacity 1.8s 0.6s ease-out, transform 1.8s 0.6s ease-out;
+    -o-transition: opacity 1.8s 0.6s ease-out, transform 1.8s 0.6s ease-out;
+}
+
+.projet3
+{
+    transition: opacity 1.8s 0.8s ease-out, transform 1.8s 0.8s ease-out;
+    -webkit-transition: opacity 1.8s 0.8s ease-out, transform 1.8s 0.8s ease-out;
+    -moz-transition: opacity 1.8s 0.8s ease-out, transform 1.8s 0.8s ease-out;
+    -ms-transition: opacity 1.8s 0.8s ease-out, transform 1.8s 0.8s ease-out;
+    -o-transition: opacity 1.8s 0.8s ease-out, transform 1.8s 0.8s ease-out;
+}
+
+.projet4
+{
+    transition: opacity 1.8s 1s ease-out, transform 1.8s 1s ease-out;
+    -webkit-transition: opacity 1.8s 1s ease-out, transform 1.8s 1s ease-out;
+    -moz-transition: opacity 1.8s 1s ease-out, transform 1.8s 1s ease-out;
+    -ms-transition: opacity 1.8s 1s ease-out, transform 1.8s 1s ease-out;
+    -o-transition: opacity 1.8s 1s ease-out, transform 1.8s 1s ease-out;
+}
+
+.projet5
+{
+    transition: opacity 1.8s 1.2s ease-out, transform 1.8s 1.2s ease-out;
+    -webkit-transition: opacity 1.8s 1.2s ease-out, transform 1.8s 1.2s ease-out;
+    -moz-transition: opacity 1.8s 1.2s ease-out, transform 1.8s 1.2s ease-out;
+    -ms-transition: opacity 1.8s 1.2s ease-out, transform 1.8s 1.2s ease-out;
+    -o-transition: opacity 1.8s 1.2s ease-out, transform 1.8s 1.2s ease-out;
+}
+
+.projet6
+{
+    transition: opacity 1.8s 1.4s ease-out, transform 1s 1.4s ease-out;
+    -webkit-transition: opacity 1.8s 1.4s ease-out, transform 1.8s 1.4s ease-out;
+    -moz-transition: opacity 1.8s 1.4s ease-out, transform 1.8s 1.4s ease-out;
+    -ms-transition: opacity 1.8s 1.4s ease-out, transform 1.8s 1.4s ease-out;
+    -o-transition: opacity 1.8s 1.4s ease-out, transform 1.8s 1.4s ease-out;
+}
+
+.projet7
+{
+    transition: opacity 1.8s 1.6s ease-out, transform 1.8s 1.6s ease-out;
+    -webkit-transition: opacity 1.8s 1.6s ease-out, transform 1.8s 1.6s ease-out;
+    -moz-transition: opacity 1.8s 1.6s ease-out, transform 1.8s 1.6s ease-out;
+    -ms-transition: opacity 1.8s 1.6s ease-out, transform 1.8s 1.6s ease-out;
+    -o-transition: opacity 1.8s 1.6s ease-out, transform 1.8s 1.6s ease-out;
+}
+
+.projet8
+{
+    transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
+    -webkit-transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
+    -moz-transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
+    -ms-transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
+    -o-transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
+}
+
+/* Changement de résolution */
+
+@media screen and (max-width: 800px) 
+{
+    .projets 
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    .nomProjet 
+    {
+        border: none;
+    }
+
+    .projets, .paragrapheProjets
+    {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
