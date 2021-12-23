@@ -82,11 +82,15 @@ const divMail = document.createElement('div');
 const titreEmail = document.createElement('h3');
 titreEmail.innerText = 'E-mail';
 
+const lienmail = document.createElement('a');
+lienmail.setAttribute('href', 'mailto:mollet.rudy@gmail.com');
+
 const contenuMail = document.createElement('span');
 contenuMail.innerText = 'mollet.rudy@gmail.com'
+lienmail.appendChild(contenuMail);
 
 divMail.appendChild(titreEmail);
-divMail.appendChild(contenuMail);
+divMail.appendChild(lienmail);
 divInformations.appendChild(divMail)
 
 //Création de la partie téléphone
