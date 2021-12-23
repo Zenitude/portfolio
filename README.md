@@ -3,7 +3,7 @@
 ## Accueil
 - Video en Background : non actif car trop volumineux pour Github
 - Message dynamique en JavaScript
-- Application Météo
+- Application Météo avec Géolocalisation
 
 ## Portfolio - Mes réalisations
 - Mes principaux projets réalisés à l'heure actuelle
