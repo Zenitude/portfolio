@@ -1,5 +1,7 @@
 # Site - Mon portfolio
 
+Site généré à 100 % par le JavaScrit
+
 ## Accueil
 - Video en Background : non actif car trop volumineux pour Github
 - Message dynamique en JavaScript
