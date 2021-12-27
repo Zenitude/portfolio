@@ -1,4 +1,4 @@
-/* Projets */
+/* Projets / Projects*/
 
 .sectionProjets 
 {
@@ -63,7 +63,6 @@
     -o-transform: none;
   }
 }
-
 
 .contenuProjets a 
 {
@@ -153,7 +152,7 @@
     opacity: 0;
 }
 
-/* Apparitions */
+/* Apparitions / Appearances */
 .projet1
 {
     transition: opacity 1.8s 0.4s ease-out, transform 1.8s 0.4s ease-out;
@@ -226,7 +225,7 @@
     -o-transition: opacity 1.8s 1.8s ease-out, transform 1.8s 1.8s ease-out;
 }
 
-/* Changement de résolution */
+/* Changement de résolution / Change in resolution*/
 
 @media screen and (max-width: 800px) 
 {
