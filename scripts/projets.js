@@ -1,4 +1,4 @@
-// Création de l'objet Projet
+// Création de l'objet Projet / Creating the Project Object
 class projets
 {
     constructor(nomProjet, imgProjet, altImgProjet, lienProjet, languageProjet)
@@ -11,7 +11,7 @@ class projets
     }
 }
 
-// Création d'un tableau qui comportera l'ensemble des Projets
+// Création d'un tableau qui comportera l'ensemble des Projets / Creation of a table that will include all Projects
 let tabProjets = [];
 
 // Création des Projets
@@ -26,7 +26,7 @@ let projet8 = new projets('Projet 8', 'ressources/projets/projet8.png', 'Image r
 let projet9 = new projets('Projet 9', 'ressources/projets/projet9.png', 'Image représentant le Projet 9', '', []);
 let projet10 = new projets('Projet 10', 'ressources/projets/projet10.png', 'Image représentant le Projet 10', '', []);
 
-// Ajout des projets dans le tableau tabProjets
+// Ajout des projets dans le tableau tabProjets / Adding Projects to the Projects Table
 tabProjets.push
 (
     legardemanger, 
@@ -41,39 +41,37 @@ tabProjets.push
     // projet10
 );
 
-// Création de la section Projets
+// Création de la section Projets / Creation of the Projects section
 const sectionProjets = document.createElement('section');
 sectionProjets.setAttribute('class', 'sectionProjets');
 sectionProjets.setAttribute('id', 'portfolio');
 containerPrincipal.appendChild(sectionProjets);
 
-// Création de la partie titre
+// Création de la partie titre / Creation of the title part
 const divTitreProjets = document.createElement('div');
 divTitreProjets.setAttribute('class', 'titreProjets');
 sectionProjets.appendChild(divTitreProjets);
 
-// Création du titre de la section Projet
+// Création du titre de la section Projet / Creating the Project Section Title
 const titreProjets = document.createElement('h2');
 titreProjets.innerText = 'Mes réalisations';
 divTitreProjets.appendChild(titreProjets);
 
-// Création du paragraphe d'accroche
+// Création du paragraphe d'accroche / Creating the grip paragraph
 const paragrapheProjets = document.createElement('p');
 paragrapheProjets.setAttribute('class', 'paragrapheProjets');
 paragrapheProjets.innerText = 'Internet is written in our hands';
 sectionProjets.appendChild(paragrapheProjets);
 
-// Création du container du contenu de la section Projet
+// Création du container du contenu de la section Projet / Creation of the content container in the Project section
 const contenuProjets = document.createElement('div');
 contenuProjets.setAttribute('class', 'contenuProjets');
 sectionProjets.appendChild(contenuProjets);
 
-
-
-// Création du tableau qui récupèrera les cases des projets
+// Création du tableau qui récupèrera les cases des projets / Creation of the table that will retrieve the project boxes
 let tabCasesProjets = [];
 
-// Création des cases de projets
+// Création des cases de projets / Creation of project boxes
 for(let i = 0 ; i < tabProjets.length ; i++)
 {
     let lienProjet = document.createElement('a');
@@ -109,21 +107,21 @@ tabCasesProjets.forEach(projet =>
     contenuProjets.appendChild(projet);
 });
 
-// Insertion des images et nom de projets
+// Insertion des images et nom de projets / Insert Images and Project Names
 for(let i = 0 ; i < tabCasesProjets.length ; i++)
 {
-    /*Insertion du lien du Projet */
+    /*Insertion du lien du Projet / Insert Project Link */
     tabCasesProjets[i].setAttribute('href', tabProjets[i]['lienProjet']);
 
-    /* Insertion de la source et du alt de l'image */
+    /* Insertion de la source et du alt de l'image / Insertion of the source en alt of image */
     tabCasesProjets[i].childNodes[0].childNodes[0].setAttribute('src', tabProjets[i]['imgProjet']);
     tabCasesProjets[i].childNodes[0].childNodes[0].setAttribute('alt', tabProjets[i]['altImgProjet']);
 
-    /* Insertion du nom du projet */
+    /* Insertion du nom du projet / Insert Project Name */
     tabCasesProjets[i].childNodes[0].childNodes[1].childNodes[0].innerText = tabProjets[i]['nomProjet'];
 }
 
-// Animation d'apparition
+// Animation d'apparition / Appearance Animation
 let optionsProjets = 
 {
     root: null,
