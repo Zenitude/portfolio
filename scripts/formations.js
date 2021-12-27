@@ -1,25 +1,25 @@
-// Création de la section Formations
+// Création de la section Formations / Creation of the Training section
 const sectionFormations = document.createElement('section');
 sectionFormations.setAttribute('class', 'sectionFormations');
 sectionFormations.setAttribute('id', 'competences');
 containerPrincipal.appendChild(sectionFormations);
 
-// Création de la partie titre
+// Création de la partie titre / Creation of the title part
 const divTitreFormations = document.createElement('div');
 divTitreFormations.setAttribute('class', 'titreFormations');
 sectionFormations.appendChild(divTitreFormations);
 
-// Création du titre Formations
+// Création du titre Formations / Creation of the title Formations
 const titreFormation = document.createElement('h2');
 titreFormation.innerText = 'Mes compétences';
 divTitreFormations.appendChild(titreFormation);
 
-// Création de la partie formations
+// Création de la partie formations / Creation of the training part
 const divFormations = document.createElement('div');
 divFormations.setAttribute('class', 'contenuFormations');
 sectionFormations.appendChild(divFormations);
 
-// Création de l'objet Formations
+// Création de l'objet Formations / Creation of the Training object
 class formations
 {
     constructor(nomFormations,imgFormations, altImgFormations)
@@ -30,7 +30,7 @@ class formations
     }
 }
 
-// Création du tableau qui comportera les formations
+// Création du tableau qui comportera les formations / Creation of the table that will include training
 let tabFormations = [];
 
 // Création des Formations
@@ -41,7 +41,7 @@ let frameworks = new formations('Frameworks', 'ressources/formations/frameworks.
 let cms = new formations('CMS', 'blabla.', 'ressources/formations/cms.png', 'Immage représentant des logos de cms');
 let logiciels = new formations ('Logiciels et OS', 'ressources/formations/logiciels.png', 'Immage représentant des logos de logiciels et de système d\'exploitation');
 
-// Ajout des formations au tableau
+// Ajout des formations au tableau / Adding Training to the Table
 tabFormations.push
 (
     frontEnd,
@@ -49,7 +49,7 @@ tabFormations.push
     logiciels
 )
 
-// Création des Contenants des formations
+// Création des Contenants des formations / Creation of Training Containers
 for(let i = 0 ; i < tabFormations.length ; i++)
 {
     let contenantFormation = document.createElement('div');
@@ -76,7 +76,7 @@ for(let i = 0 ; i < tabFormations.length ; i++)
     divFormations.appendChild(contenantFormation);
 }
 
-// Animation d'apparition
+// Animation d'apparition / Appearance Animation
 let optionsFormations = 
 {
     root: null,
