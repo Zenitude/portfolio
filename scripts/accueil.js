@@ -1,4 +1,4 @@
-// Création de la section Accueil
+// Création de la section Accueil / Creating the Home section
 const sectionAccueil = document.createElement('section');
 sectionAccueil.setAttribute('class', 'sectionAccueil');
 sectionAccueil.setAttribute('id', 'accueil');
@@ -6,7 +6,7 @@ containerPrincipal.appendChild(sectionAccueil);
 
 sectionAccueil.appendChild(header)
 
-// API Météo
+// API Météo / Weather API
 const cleAPI = "cc805b94763f12a71588c1db269528ab";
 
 const meteo = document.createElement('div');
@@ -59,12 +59,12 @@ function meteoDuJour(donneesAPI)
   region.innerText = `${donneesAPI.timezone}`;
 }
 
-// Création du container du message d'accueil
+// Création du container du message d'accueil / Creation of the welcome message container
 const messageAccueil = document.createElement('div');
 messageAccueil.setAttribute('class', 'msgAccueil');
 sectionAccueil.appendChild(messageAccueil);
 
-// Message d'accueil
+// Message d'accueil / Welcome message
 new Typewriter(messageAccueil, 
 {
     loop: true,
@@ -109,7 +109,7 @@ new Typewriter(messageAccueil,
 .pauseFor(1000)
 .start()
 
-// Création du container de la video en background
+// Création du container de la video en background / Creation of the video container in background
 let tabVideo = [];
 
 class video {
@@ -149,7 +149,7 @@ tabVideo.forEach(video =>
 
 messageAccueil.appendChild(videoBackground);
 
-// Animation d'apparition
+// Animation d'apparition / Appearance Animation
 let optionsAccueil = 
 {
     root: null,
