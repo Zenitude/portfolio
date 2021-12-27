@@ -1,4 +1,4 @@
-/* Couleurs */
+/* Général / General */
 *, ::before, ::after 
 {
   box-sizing: border-box;
@@ -94,6 +94,8 @@ header nav ul li a
     -webkit-filter: drop-shadow(0px 0px 1px #000) drop-shadow(0px 0px 1px #000);
 }
 
+/* Menu hamburger */
+
 .menuH
 {
   width: 50px;
@@ -183,7 +185,7 @@ footer
   font-weight: bold;
 }
 
-/* Animation d'apparition*/
+/* Animation d'apparition / Appearance Animation*/
 @keyframes apparition
 {
   100%
@@ -197,7 +199,7 @@ footer
   }
 }
 
-/* Titres */
+/* Titres / Titles */
 h1, h2
 {
   font-family: 'Times New Roman', Times, serif;
@@ -218,7 +220,7 @@ h3
   font-size: 5vmin;
 }
 
-/* Changement de résolution */
+/* Changement de résolution / Change in resolution */
 
 @media screen and (max-width:1450px) 
 {
