@@ -1,20 +1,20 @@
-// Création du header
+// Création du header / Creating the header
 const header = document.createElement('header');
 
-// Création du grand titre
+// Création du grand titre / Creation of the main title
 const grandTitre = document.createElement('h1');
 grandTitre.innerText = 'Rudy Mollet';
 header.appendChild(grandTitre);
 
-// Création de la navbar
+// Création de la navbar / Creation of the navbar
 const nav = document.createElement('nav');
 header.appendChild(nav);
 
-// Création de la liste
+// Création de la liste / Creation of the list
 const liste = document.createElement('ul');
 nav.appendChild(liste);
 
-// Création des items
+// Création des items / Creation of items
 let tabItems = [];
 
 for(let i = 0 ; i < 5; i++)
@@ -29,7 +29,7 @@ for(let i = 0 ; i < 5; i++)
     tabItems.push(item);
 }
 
-// Ajout des informations pour chaque item
+// Ajout des informations pour chaque item / Adding information for each item
 tabItems[0].childNodes[0].setAttribute('href', '#accueil');
 tabItems[0].childNodes[0].innerText = 'Accueil';
 
@@ -45,13 +45,13 @@ tabItems[3].childNodes[0].innerText = 'À propos';
 tabItems[4].childNodes[0].setAttribute('href', '#contact');
 tabItems[4].childNodes[0].innerText = 'Contact';
 
-// Ajout des items à la liste
+// Ajout des items à la liste / Adding items to the list
 tabItems.forEach(item =>
 {
     liste.appendChild(item);
 });
 
-// Ajout du menu hamburger
+// Ajout du menu hamburger / Adding the hamburger menu
 const menuH = document.createElement('div');
 menuH.setAttribute('class', 'menuH');
 header.appendChild(menuH);
@@ -66,7 +66,7 @@ for(let i = 0 ; i < 3 ; i++)
     tabHamburgers.push(hamburger);
 }
 
-// Activation menuH au click
+// Activation menuH au click / Activate menuH at the click
 menuH.addEventListener('click', () =>
 {
     tabHamburgers.forEach(hmbgr =>
