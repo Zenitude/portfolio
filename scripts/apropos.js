@@ -1,20 +1,20 @@
-// Création de la section À propos
+// Création de la section À propos / Creating the About section
 let sectionAPropos = document.createElement('section');
 sectionAPropos.setAttribute('class', 'sectionAPropos');
 sectionAPropos.setAttribute('id', 'apropos');
 containerPrincipal.appendChild(sectionAPropos);
 
-// Création de la partie titre
+// Création de la partie titre / Creation of the title part
 const divTitreAPropos = document.createElement('div');
 divTitreAPropos.setAttribute('class', 'titreAPropos');
 sectionAPropos.appendChild(divTitreAPropos);
 
-// Création du titre de la section À Propos
+// Création du titre de la section À Propos / Creating the Section Title About
 const titreAPropos = document.createElement('h2');
 titreAPropos.innerText = 'Qui suis-je ?';
 divTitreAPropos.appendChild(titreAPropos);
 
-// Création du container du contenu de la section À Propos
+// Création du container du contenu de la section À Propos / Creation of the container of the contents of the About section
 const contenuAPropos = document.createElement('div');
 contenuAPropos.setAttribute('class', 'contenuAPropos');
 sectionAPropos.appendChild(contenuAPropos);
@@ -36,7 +36,7 @@ contenuAPropos.innerHTML = `<p>J'ai effectué des études dans le domaine de la 
 
 let tabAPropos = document.querySelectorAll('.contenuAPropos p');
 
-// Animation d'apparition
+// Animation d'apparition / Appearance Animation
 let optionsAPropos = 
 {
     root: null,
