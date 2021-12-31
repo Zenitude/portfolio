@@ -1,6 +1,6 @@
 # Site - Mon portfolio
 
-Site généré à 100 % JavaScrit
+Site généré à 100 % en JavaScript
 
 ## Accueil
 - Video en Background : non actif car trop volumineux pour Github
