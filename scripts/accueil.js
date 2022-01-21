@@ -168,7 +168,7 @@ playAndPause.addEventListener('click', () =>
     videoBackground.pause();
     playAndPause.classList.remove('pause');
     playAndPause.classList.add('play');
-    playAndPause.style.background = 'url(/ressources/accueil/play.svg)';
+    playAndPause.style.background = 'url(ressources/accueil/play.svg)';
   }
 })
 
