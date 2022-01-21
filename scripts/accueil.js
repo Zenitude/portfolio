@@ -133,7 +133,6 @@ tabVideo.push(
 );
 
 const videoBackground = document.createElement('video');
-videoBackground.setAttribute('autoplay', '');
 videoBackground.setAttribute('loop', '');
 videoBackground.setAttribute('muted', '');
 videoBackground.setAttribute('preload', 'auto');
@@ -148,6 +147,30 @@ tabVideo.forEach(video =>
 });
 
 messageAccueil.appendChild(videoBackground);
+
+const playAndPause = document.createElement('div');
+playAndPause.style.backgroundImage = 'url(../ressources/accueil/play.svg)';
+playAndPause.setAttribute('class', 'playAndPause');
+playAndPause.classList.add('play');
+messageAccueil.appendChild(playAndPause);
+
+playAndPause.addEventListener('click', () =>
+{
+  if(playAndPause.classList.contains('play'))
+  {
+    videoBackground.play();
+    playAndPause.classList.remove('play');
+    playAndPause.classList.add('pause');
+    playAndPause.style.backgroundImage = 'url(../ressources/accueil/pause.svg)';
+  }
+  else
+  {
+    videoBackground.pause();
+    playAndPause.classList.remove('pause');
+    playAndPause.classList.add('play');
+    playAndPause.style.background = 'url(../ressources/accueil/play.svg)';
+  }
+})
 
 // Animation d'apparition / Appearance Animation
 let optionsAccueil = 
