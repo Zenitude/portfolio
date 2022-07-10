@@ -100,7 +100,7 @@ const titreTel = document.createElement('h3');
 titreTel.innerText = 'Téléphone';
 
 const contenuTel = document.createElement('span');
-contenuTel.innerText = '06.28.18.86.67';
+contenuTel.innerText = '06.XX.XX.XX.XX';
 
 divTel.appendChild(titreTel);
 divTel.appendChild(contenuTel);
